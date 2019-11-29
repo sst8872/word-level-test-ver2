@@ -17,8 +17,8 @@ const posts = {
     postPerpage: 10,
     currentPage: 0,
     results: null,
-    currentSheetID: '1mgbYLvqlZ9FIRFbiIhg6C4SQZtHihCOME7f5m49Ze84',
-    currentApiURL: 'https://script.google.com/macros/s/AKfycbzyqLGZTdZSFlGtghA2wQRpPb8yMs88uWBB92iYnAga_OhSJ9c/exec',
+    currentSheetID: '1_Z_bti_Wk9g-t2IgxZGYvTpKXaZAqkFt3vDmw-1BU74',
+    currentApiURL: 'https://script.google.com/macros/s/AKfycbyLoDyJGooiBIZhhC_R4IJDbKgz6yY8aknA5cZdj0LwAuzdSvFx/exec',
     currentDay: 0,
     currentActive: 1
 };
@@ -45,6 +45,7 @@ choices.forEach(choice => {
             choices.forEach(choice => {
             choice.classList.remove('active');
         });
+        document.getElementById('mySidenav').style.width = 0;
         document.querySelector('.game').innerHTML = '';
         document.querySelector('.open-box').style.display = 'none';
 
@@ -147,6 +148,7 @@ function loadJSON(sheetLength) {
 
 
 function loadPage(page) {
+    document.getElementById('mySidenav').style.width = '300px';
     document.querySelector('.game').innerHTML = '';
     document.querySelector('.open-box').style.display = 'block'
     posts.currentPage = page;

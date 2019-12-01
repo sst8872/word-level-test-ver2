@@ -67,7 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1575013775357</updated>
       <workItem from="1575013777121" duration="4753000" />
-      <workItem from="1575021653953" duration="6544000" />
+      <workItem from="1575021653953" duration="8270000" />
+      <workItem from="1575068890299" duration="1140000" />
+      <workItem from="1575125640416" duration="383000" />
     </task>
     <servers />
   </component>
@@ -80,6 +82,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1168" y="296" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575036940542">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1168" y="296" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575036940542" />
     <state x="887" y="192" key="SettingsEditor" timestamp="1575015056471">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

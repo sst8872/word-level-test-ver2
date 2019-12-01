@@ -6,7 +6,9 @@
   "dependencies": {
     "cssnano": "^4.1.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.23.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

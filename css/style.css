@@ -7,8 +7,10 @@ body {
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
     margin:60px 40px 10px 40px;
-    background-color: #eee;
     overscroll-behavior: contain;
+    /* css gradient */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,85,107,1) 21%, rgba(24,177,214,1) 78%, rgba(0,212,255,1) 100%);
 }
 
 /* Style home buttons */

@@ -1,3 +1,4 @@
+import '../css/dropdwon.css';
 import '../css/loader.css';
 import '../css/style.css';
 import '../css/navbar.css';
@@ -103,13 +104,6 @@ function init(e) {
     button.addEventListener('click', () => getSheetsLength(posts.currentApiURL, loadJSON));
     wrapper.appendChild(button);
 
-    // Edit button
-    let editBtn = document.createElement('button');
-    editBtn.type = button;
-    editBtn.setAttribute('class', 'edit');
-    editBtn.textContent = "Edit Study";
-    wrapper.appendChild(editBtn);
-
 
     // Game element
     let game = document.createElement('div');
@@ -168,7 +162,6 @@ function loadPage(page) {
     // }
     document.querySelector('.index').classList.remove('hidden');
     document.querySelector('.start').style.display = 'none';
-    document.querySelector('.edit').style.display = 'none';
     loadNav();
     loadNumbers();
     let myWords = shuffle(posts.results[page]);

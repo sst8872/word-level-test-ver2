@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/loader.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/dropdwon.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/loader.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -331,6 +336,8 @@ exports.default = _default;
 },{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
+require("../css/dropdwon.css");
+
 require("../css/loader.css");
 
 require("../css/style.css");
@@ -444,13 +451,7 @@ function init(e) {
   button.addEventListener('click', function () {
     return (0, _fetchSheetsLength.default)(posts.currentApiURL, loadJSON);
   });
-  wrapper.appendChild(button); // Edit button
-
-  var editBtn = document.createElement('button');
-  editBtn.type = button;
-  editBtn.setAttribute('class', 'edit');
-  editBtn.textContent = "Edit Study";
-  wrapper.appendChild(editBtn); // Game element
+  wrapper.appendChild(button); // Game element
 
   var game = document.createElement('div');
   game.classList.add('game');
@@ -509,7 +510,6 @@ function loadPage(page) {
 
   document.querySelector('.index').classList.remove('hidden');
   document.querySelector('.start').style.display = 'none';
-  document.querySelector('.edit').style.display = 'none';
   loadNav();
   loadNumbers();
   var myWords = shuffle(posts.results[page]);
@@ -623,7 +623,7 @@ function makeWordContent(event, color) {
   (0, _exportToWords.default)('exportContent', "day-".concat(index + 1, ".test"));
   exportContent.innerHTML = '';
 }
-},{"../css/loader.css":"css/loader.css","../css/style.css":"css/style.css","../css/navbar.css":"css/navbar.css","../spreadSheet/sheetIDs":"spreadSheet/sheetIDs.js","../spreadSheet/apiURLs":"spreadSheet/apiURLs.js","./fetchSheetsLength":"js/fetchSheetsLength.js","./exportToWords":"js/exportToWords.js","./makeTable":"js/makeTable.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../css/dropdwon.css":"css/dropdwon.css","../css/loader.css":"css/loader.css","../css/style.css":"css/style.css","../css/navbar.css":"css/navbar.css","../spreadSheet/sheetIDs":"spreadSheet/sheetIDs.js","../spreadSheet/apiURLs":"spreadSheet/apiURLs.js","./fetchSheetsLength":"js/fetchSheetsLength.js","./exportToWords":"js/exportToWords.js","./makeTable":"js/makeTable.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -651,7 +651,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49474" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
